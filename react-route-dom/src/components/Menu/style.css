@@ -1,0 +1,11 @@
+.menu {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+li {
+  display: inline;
+  padding: 2rem;
+}
