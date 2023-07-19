@@ -7,6 +7,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import { NotFound } from './components/404'
 import { About } from './components/About'
 import { Menu } from './components/Menu'
+import { Post } from './components/Post'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -14,6 +15,8 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <Menu />
     <Routes>
       <Route path='/home' element={<Home/>}/>
+      <Route path='/post' element={<Post/>}/>
+      <Route path='/post/:id' element={<Post/>}/>
       <Route path='/About' element={<About/>}/>
       <Route path='/' element={<Home/>}/>
       <Route path="*"  element={<NotFound/>}/>
