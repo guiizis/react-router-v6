@@ -1,4 +1,4 @@
-import { useParams, useSearchParams } from 'react-router-dom'
+import { Outlet, useParams, useSearchParams } from 'react-router-dom'
 
 export const Post = () => {
   const { id } = useParams();
@@ -7,6 +7,9 @@ export const Post = () => {
   console.log(qs.get('teste'));
 
   return (
-    <h1>Post</h1>
+    <>
+      <h1>Post</h1>
+      <Outlet />
+    </>
   )
 }
